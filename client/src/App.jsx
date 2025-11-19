@@ -3,7 +3,7 @@
  import navbar from './component/navbar'
  import result from './page/result'
  import buycredit from './page/buycredit'
- import footer from './components/footer'
+ import Footer from './components/footer.js'
 
  
  const App = () => {
