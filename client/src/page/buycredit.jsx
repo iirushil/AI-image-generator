@@ -6,7 +6,7 @@ const buycredit = () => {
       test buy
     </div>
   )
-}
+};
 
 
-export default buycredit
+export default buycredit;

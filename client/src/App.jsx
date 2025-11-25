@@ -1,24 +1,25 @@
- import React from 'react'
- import Routes from 'react-router-dom'
- import navbar from './component/navbar'
- import result from './page/result'
- import buycredit from './page/buycredit'
- import Footer from './components/footer.js'
+import React from "react";
+import { Routes, Route } from "react-router-dom";
+import Navbar from "./component/navbar.jsx";
+import Result from "./page/result.jsx";
+import Buycredit from "./page/buycredit.jsx";
+import Home from "./page/home.jsx";
+import Footer from "./component/footer.jsx";
 
- 
- const App = () => {
-   return (
-     <div className = 'px-4 sm :px-10 md :px14 lg:px-28 min-h-screen bg-gradient-to-b from-teal-50 to-pink-50'>
+const App = () => {
+  return (
+    <div className="px-4 sm:px-10 md:px-14 lg:px-28 min-h-screen bg-gradient-to-b from-teal-50 to-pink-50">
+      
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/result" element={<Result />} />
+          <Route path="/buy" element={<Buycredit />} />
+        </Routes>
+        <Footer />
+      
+    </div>
+  );
+};
 
-       <routes>
-        <route path = '/' element = {<home />} />
-        <route path = '/result' element = {<result />} />
-        <route path = '/buy' element = {<buycredit />} />
-       </routes>
-       <footer/>
-     </div>
-   )  
- }
- 
- export default App;
- 
+export default App;
