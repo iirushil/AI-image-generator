@@ -1,11 +1,11 @@
-import {React,  useContext } from 'react'
+import {React } from 'react'
 import { delay, motion } from "motion/react"
 import {assets} from '../assets/assets'
 import {useNavigate} from 'react-router-dom'
 
 const header = () => {
 
-  const {user , setShowLogin} = useContext(AppContext)
+  // const {user , setShowLogin} = useContext(AppContext)
   const navigate = useNavigate()
 
   const onClickHandler = () =>{
@@ -68,4 +68,4 @@ const header = () => {
   )
 }
 
-export default header
+export default header;
