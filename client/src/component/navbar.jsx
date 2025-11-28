@@ -14,7 +14,7 @@ const navbar = () => {
             <img src={assets.credit_star} alt = "" />
             <p>Credit Left : 5</p>
           </button>
-          <p>hi , Aicoding </p>
+          <p>hi , Rushil </p>
           <div>
             <img src = {assets.profile_icon} className='w-10 drop-shadow' alt = "" ></img>
           </div>
