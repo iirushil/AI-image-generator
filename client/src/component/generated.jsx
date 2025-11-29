@@ -15,7 +15,7 @@ const generated = () => {
     className='pb-16 text-center'>
       <h1 className='text-2xl md:text-3xl lg:text-4xl mt-4 font-semibold text-neutral-800 py-6 md:py-16'>See the Magic. Try Now</h1>
       <button onClick={() => navigate('/buy')} className='inline-flex items-center gap-2 px-12 py-3 rounded-full bg-yellow-500 text-red-500 m-auto hover:scale-105 transition-all duration-500'>Subscription 
-    <img src = "{assets.star_group}" alt = "" />
+    <img src = {assets.star_group} alt = "" />
       </button>
     </motion.div>
   )

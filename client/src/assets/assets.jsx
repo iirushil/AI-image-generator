@@ -87,7 +87,7 @@ export const testimonialsData = [
         stars:4,
         text:`Exceptional web development! Delivered a seamless, responsive site with clean code and great UX. Efficient and detail-oriented.`
     },
-]
+];
 
 export const plans = [
     {
