@@ -1,5 +1,5 @@
 import userModel from "../models/usermodel.js"
-import bcrypt from 'bcrypt.js'
+import bcrypt from 'bcrypt'
 import jwt from 'jsonwebtoken'
 import validator from 'validator'
 
@@ -62,4 +62,18 @@ const loginUser = async (req,res) => {
     }
 }
 
-export {registerUser , loginUser}
+const userCredits = async (req , res) => {
+    try{
+        const {userId} = req.body
+
+        const user = await userModel.findById(userId)
+        res.json({success:true , credits:user.creditBalance , user:{name: user.name}})
+    }catch(error) {
+         console.log(error)
+        res.json({success:false , message:error.message})
+    }
+
+}
+
+export {registerUser , loginUser , userCredits}
+
