@@ -14,7 +14,7 @@ app.use(cors());
 await connectDB();
 
 app.use('/api/user' , userRouter)
-app.use('/api/user' , imageRouter)
+app.use('/api/image' , imageRouter)
 app.get ('/' , (req ,res) => {
     res.send('API Working')
 });
