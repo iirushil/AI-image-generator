@@ -1,5 +1,4 @@
-import React from "react";
-import { useContext } from "react";
+import React , {useContext} from "react";
 import { Routes, Route } from "react-router-dom";
 import Navbar from "./component/navbar.jsx";
 import Result from "./page/result.jsx";

@@ -1,11 +1,12 @@
-import {React } from 'react'
+import React , {useContext}  from 'react'
+import { AppContext } from '../context/appcontext'
 import { delay, motion } from "motion/react"
 import {assets} from '../assets/assets'
 import {useNavigate} from 'react-router-dom'
 
-const header = () => {
+const Header = () => {
 
-  // const {user , setShowLogin} = useContext(AppContext)
+  const {user , setShowLogin} = useContext(AppContext)
   const navigate = useNavigate()
 
   const onClickHandler = () =>{
@@ -41,7 +42,7 @@ const header = () => {
       animate={{opacity:1 , y:0}}
       transition={{delay:0.6 , duration:0.8}}
       >Unleash boundless creativity with AI - Turn your thoughts into stunning visual art instantly . Just type , and watch the magic unfold.</motion.p>
-      <motion.button className='sm:text-lg text-white bg-pink-700 w-auto mt-8 px-12 py-2.5 flex items-center gap-2 roundede'
+      <motion.button onClick={onClickHandler} className='sm:text-lg text-white bg-pink-700 w-auto mt-8 px-12 py-2.5 flex items-center gap-2 roundede'
       whileHover={{scale:1.05}}
       whileTap={{scale:0.95}}
       initial={{opacity:0}}
@@ -68,4 +69,4 @@ const header = () => {
   )
 }
 
-export default header;
+export default Header;

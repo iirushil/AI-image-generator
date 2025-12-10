@@ -3,6 +3,7 @@ import FormData from "form-data";
 import axios from "axios";
 
 export const generateImage = async (req, res) => {
+     console.log("✅ /api/image/generate-image hit");
     try {
         const { userId, prompt } = req.body
 
